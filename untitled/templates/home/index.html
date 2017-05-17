@@ -1,0 +1,30 @@
+{% extends "home/base.html" %}
+{% block placeholder %}
+{% load static %}
+<div class="container">
+<h2> SẢN PHẨM </h2>
+	<div class="col-md-2">
+		<img src="" class="img-responsive">
+	</div>
+		<div class="col-md-10">
+			{% for item in thongtin %}
+			<div class="col-md-4 col-sm-12 col-xs-12">
+				<div class="sanpham">
+					<a href="/detail/{{ item.masp }}">
+						<div class="image">
+  							<img src="{% static item.urlhinh %}" class="img-responsive">
+  						</div>
+ 						<div class="middle">
+    							<div class="text">Mua ngay</div>
+ 						</div>
+ 					</a>
+
+ 						<p class="text-center" style="font-size: 18px">{{ item.tensp }}</p>
+						<p class="text-center" style="font-size: 19px; color: red"> {{ item.gia }} USD </p>
+					</div> 
+			</div>
+			{% endfor %}
+	</div>
+	</div>
+
+{% endblock %}

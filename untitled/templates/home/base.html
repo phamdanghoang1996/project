@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shop Ahihi</title>
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap-theme.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet"> 
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style_bansanpham.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+</head>
+<body>
+<header>
+	<style type="text/css">
+  #khoangcach{
+    margin-bottom:55px;
+  }
+</style>
+<div class="container" id="khoangcach">
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Nhóm Phát triển ứng dụng WEB</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="">Trang chính</a></li>
+             <li>
+              <a href="http://127.0.0.1:8000/nike/"> NIKE <span></span></a>
+            </li>
+             <li >
+             <a href="http://127.0.0.1:8000/adidas/"> Adidas <span></span></a>
+            </li>
+             <li >
+          	 <a href="http://127.0.0.1:8000/bitis/"> Bitis <span></span></a>
+            </li>
+             <li class="dropdown">
+             <a href="http://127.0.0.1:8000/non/">Mũ <span></span></a>
+            </li>
+            <li><a href="http://127.0.0.1:8000/lienhe/"> Liên hệ</a></li>
+            <li><a href=""> <span class="glyphicon glyphicon-shopping-cart"></span> Giỏ hàng</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </div>
+</header>
+	{% block placeholder %}
+
+	{% endblock %}
+<footer style="border: 3px black solid">
+<link rel="stylesheet" href="{% static 'css/style_footer.css' %}">
+	<div class="col-md-4" id="footer">
+		<h2 class="text-center">"ĐẢM BẢO SỰ HÀI LÒNG</h2>
+		<h3>Chất lượng</h3>
+		<p>Cam kết sản phẩm bán tại cửa hàng bằng chính sách bảo hành 365 ngày và chăm sóc trọn đời sau khi hết bảo hành</p>
+		<h3>Phục vụ</h3>
+		<p>Cam kết chất lượng phục vụ tốt nhất cho mọi khách hàng bằng chính sách hoàn tiền và tặng quà nêý nhân viên phục vụ quý khách không chu đáo</p>
+		<h3>Hỗ trợ: </h3>
+		<p>Nếu bạn gặp rắc rồi hay chất lượng dịch vụ của Yame, hãy gọi đến số 09 76 78 76 74, hoặc inbox ở <a href="facebook.com.vn">Fan Page</a></p>
+	</div>
+	<div class="col-md-4" id="footer">
+		<h3>Thông tin: </h3>
+		<p><a href="http://127.0.0.1:8000/gioithieu/" style="text-decoration: none">Giới thiệu về Shop</a></p>
+		<p><a href="http://127.0.0.1:8000/tuyendung/" style="text-decoration: none">Tuyển dụng</a></p>
+		<p><a href=" " style="text-decoration: none">Gửi góp ý/Than Phiền</a></p>
+		<h4>FAQ </h4>
+		<p><a href="http://127.0.0.1:8000/vanchuyen/" style="text-decoration: none">Vận chuyển</a></p>
+		<p><a href="http://127.0.0.1:8000/chinhsachdoitra/" style="text-decoration: none">Chính sách đổi trả</a></p>
+		<p><a href="http://127.0.0.1:8000/chinhsachbaohanh/" style="text-decoration: none">Chính sách bảo hành</a></p>
+		<p><a href="http://127.0.0.1:8000/doitaccungcap/" style="text-decoration: none">Đối tác cung cấp</a></p>
+	</div>
+	<div class="col-md-4" id="footer">
+		<h3>Hệ thống cửa hàng</h3>
+		<p>Cửa hàng 1:KTX Khu B, khu phố 6, phường Linh Trung, Quận Thủ Đức</p>
+		<p>Cửa hàng 2:..............................</p>
+		<p>Cửa hàng 3:..............................</p>
+		<p>Cửa hàng 4:..............................</p>
+		<p>Cửa hàng 5:..............................</p>
+		<p>Cửa hàng 6:..............................</p>
+		<p>Cửa hàng 7:..............................</p>
+		<p>Cửa hàng 8:..............................</p>
+	</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,42 @@
+{% extends "home/base.html" %}
+{% block placeholder %}
+{% load static %}
+<div class="container">
+<div class="col-md-5">
+		<img border="0" src="{% static thongtin.urlhinh %}" style="width:250px; height:338px">
+
+	</div>
+	<div class="col-md-5">
+		<p style="font-size: 25px">  </p> 
+		<p>Giá bán: <span style="font-size: 16px; color: red"></span></p>
+
+		<p style="font-size: 16px"> Còn lại: 10</p>
+	</div>
+	<div class="col-md-2">
+			
+			<input type="hidden" value="" name="giaban">
+			<select style="width: 180px; height: 40px" name="mau"> 
+				<option value="Bạn chưa chọn màu">Chọn màu</option>
+				<option value="Đỏ">Đỏ</option>
+				<option value="Đen">Đen</option>
+				<option value="Xanh">Xanh</option>
+			</select>
+			<br>
+			<select name="size" style="width: 180px; height: 40px; margin-top: 20px" required="required">
+				<option value="Bạn chưa chọn size">Chọn size</option>
+				<option value=""></option>
+			</select>
+			<p style="font-size: 18px; margin-top: 20px">Số lượng: </p>
+			<input type="number" name="soluong" style="width: 180px; height: 40px" required="required">
+			<button type="submit" class="btn btn-primary" style="margin-top: 20px; width: 180px"><span class="glyphicon glyphicon-plus-sign"></span> Mua ngay</button>
+			<input type="hidden" name="masp" value="">
+			<input type="hidden" name='tensp' value="">
+			<input type="hidden" name='urlhinh' value="">
+			<a href=""><button style="margin-top: 20px; width: 180px" class="btn btn-danger"><span class="glyphicon glyphicon-shopping-cart"></span>Thêm vào giỏ hàng</button></a>
+	</div>
+	<div class="col-md-12">
+		<h3 style="font-weight: bold">Mô tả sản phẩm: </h3>
+		<div style="margin-left: 100px"></div>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+	<h4 class="text-center">Sau khi xem qua 3 clip hướng dẫn, và tham khảo một số tài liệu trên mạng, em xin làm 1 demo bằng Vue.js và Bootstrap</h4>
+<div class="container">
+	<div class="panel-default">
+		<div class="col-md-12">
+			<div class="panel-heading">
+				<article id="post1" v-show="isVisible">
+				<div class="col-md-6">
+					<img src="img/avatar.jpg" alt="" class="img-responsive">
+					<h4>Tên: Jannina</h4>
+					<h4>Ngày sinh: 19/10/1996</h4>
+				</div>
+					<button class="btn btn-danger" @click= "isVisible=false"> <span class="	glyphicon glyphicon-chevron-down"></span> Ẩn phản hồi</button>
+					<pre style="margin-top: 10px">{{$data | json}}</pre>
+				<div class="panel-body">
+					<div class="col-md-6">
+						<h3 style="font-weight: bold">Phản hồi sản phẩm: </h3>
+						<h4>Sản phẩm rất tốt!</h4>
+						<h5>ps: Em sử dụng vue.js để ẩn bài viết đi!</h5>
+						<h5>ps: Làm sáng nút Thích, mỗi khi người dùng ấn vô</h5>
+					</div>
+				</div>
+				</article>
+			</div>
+			
+			<article id="post2">
+			<div class="panel-footer">
+				<button v-bind:class="{'btn-primary': liked}"
+				@click="liked=true"><span class="glyphicon glyphicon-thumbs-up"></span> Thích</button>
+					<pre  style="margin-top: 10px">{{$data | json}}</pre>		
+				
+			</div>
+			</article>
+
+
+		</div>
+	</div>
+</div>
+
+
+<script src="js/app.js"></script>
+
+
+</body>
+</html>
